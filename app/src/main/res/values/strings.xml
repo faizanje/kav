@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">KAV</string>
+    <string name="new_order">הזמנה חדשה</string>
+    <string name="order_for">עבור מי ההזמנה?</string>
+    <string name="order_item_text_1">לקוח</string>
+    <string name="order_item_text_2">קו חלוקה</string>
+    <string name="order_item_text_3">נהג</string>
+    <string name="order_item_text_4">מלקט</string>
 </resources>

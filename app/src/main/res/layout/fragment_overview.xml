@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+
     android:layout_height="match_parent"
-    tools:context=".ui.overview.OverviewFragment">
+    tools:context=".ui.new_order.NewOrderFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        app:title="@string/new_order"
+
+        android:layout_height="wrap_content">
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Overview fragmnet"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-        android:gravity="center"/>
+        android:layout_width="wrap_content"
+        android:text="@string/order_for"
+        style="@style/TextStyle"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:id="@+id/recyclerView"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
