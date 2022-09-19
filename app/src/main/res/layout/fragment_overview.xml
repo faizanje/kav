@@ -7,7 +7,7 @@
     android:layoutDirection="rtl"
 
     android:layout_height="match_parent"
-    tools:context=".ui.new_order.NewOrderFragment">
+    tools:context=".ui.neworder.NewOrderFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"

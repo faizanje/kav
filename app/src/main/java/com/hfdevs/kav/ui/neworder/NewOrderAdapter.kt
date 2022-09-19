@@ -1,10 +1,10 @@
-package com.hfdevs.kav.ui.new_order
+package com.hfdevs.kav.ui.neworder
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.hfdevs.kav.databinding.NeworderLayout1Binding
-import com.hfdevs.kav.ui.data.NewOrderItemData
+import com.hfdevs.kav.data.model.NewOrderItemData
 
 class NewOrderAdapter(var datalist:List<NewOrderItemData>) : RecyclerView.Adapter<NewOrderAdapter.MyViewHolder>(){
 
