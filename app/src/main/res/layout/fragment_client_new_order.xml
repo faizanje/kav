@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".ui.clientneworder.ClientNewOrderFragment">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/purple_500"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/purple_500"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_arrrow"
+                android:id="@+id/btnBack"
+                android:layout_marginHorizontal="12dp"
+                android:contentDescription="@string/order_item_text_t1"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הזמנה חדשה"
+                android:layout_toEndOf="@id/btnBack"
+                style="@style/TextStyle"
+
+                android:id="@+id/title"
+                android:textSize="22sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הזמנה חדשה"
+                android:layout_below="@id/title"
+                android:layout_toLeftOf="@id/btnBack"
+                android:fontFamily="@font/roboto_regular"
+
+                android:textSize="14sp"
+
+                />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:id="@+id/recyclerView"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

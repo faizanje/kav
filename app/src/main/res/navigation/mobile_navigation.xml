@@ -9,5 +9,14 @@
         android:id="@+id/overviewFragment"
         android:name="com.hfdevs.kav.ui.neworder.NewOrderFragment"
         android:label="fragment_overview"
-        tools:layout="@layout/fragment_overview" />
+        tools:layout="@layout/fragment_overview" >
+        <action
+            android:id="@+id/action_overviewFragment_to_clientNewOrderFragment"
+            app:destination="@id/clientNewOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientNewOrderFragment"
+        android:name="com.hfdevs.kav.ui.clientneworder.ClientNewOrderFragment"
+        android:label="fragment_client_new_order"
+        tools:layout="@layout/fragment_client_new_order" />
 </navigation>

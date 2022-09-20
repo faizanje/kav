@@ -1,30 +1,30 @@
-package com.hfdevs.kav.ui.neworder
+package com.hfdevs.kav.ui.clientneworder
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.get
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.hfdevs.kav.R
-import com.hfdevs.kav.databinding.FragmentOverviewBinding
-import com.hfdevs.kav.data.model.NewOrderItemData
-import com.hfdevs.kav.ui.clientneworder.ClientNewOrderViewModel
+import com.hfdevs.kav.data.model.ClientNewOrderItemData
+import com.hfdevs.kav.databinding.FragmentClientNewOrderBinding
 
-class NewOrderFragment : Fragment() {
+class ClientNewOrderFragment : Fragment() {
 
-    private lateinit var binding: FragmentOverviewBinding
-    private val viewModel by viewModels<NewOrderViewModel>()
-    private lateinit var adapter: NewOrderAdapter
-    val list = mutableListOf<NewOrderItemData>()
+    private lateinit var binding: FragmentClientNewOrderBinding
+    private val viewModel by viewModels<ClientNewOrderViewModel>()
+    private lateinit var adapter: ClientNewOrderAdapter
+    val list = mutableListOf<ClientNewOrderItemData>()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentOverviewBinding.inflate(inflater, container, false)
+
+        binding= FragmentClientNewOrderBinding.inflate(inflater,container,false)
+
         init()
         observeData()
         viewModel.fetchData()
@@ -42,7 +42,7 @@ class NewOrderFragment : Fragment() {
     private fun init() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
-        adapter = NewOrderAdapter(list)
+        adapter = ClientNewOrderAdapter(list)
         binding.recyclerView.adapter = adapter
     }
 

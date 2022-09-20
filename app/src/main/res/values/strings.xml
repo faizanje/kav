@@ -6,4 +6,35 @@
     <string name="order_item_text_2">קו חלוקה</string>
     <string name="order_item_text_3">נהג</string>
     <string name="order_item_text_4">מלקט</string>
+
+    <string name="order_item_text_h1">שופרסל</string>
+    <string name="order_item_text_t1">שופרסל גבעתיים</string>
+    <string name="order_item_text_st1">מנחם בגין 125, תל אביב</string>
+    <string name="order_item_text_h2">רמי לוי</string>
+    <string name="order_item_text_t2"> רמי לוי רמת גן - מאסטר</string>
+    <string name="order_item_text_st2">מנחם בגין 125, פתח תקווה</string>
+    <string name="order_item_text_t3">ויקטורי</string>
+    <string name="order_item_text_st3">מנחם בגין 125, רמת גן</string>
+    <string name="order_item_text_t4"> ויקטורי</string>
+    <string name="order_item_text_st4">מנחם בגין 125, רמת גן</string>
+
+    <string name="order_item_text_t5">ויקטורי</string>
+    <string name="order_item_text_st5">מנחם בגין 125, רמת גן</string>
+    <string name="order_item_text_t6">ויקטורי</string>
+
+    <string name="order_item_text_st6">מנחם בגין 125, רמת גן</string>
+    <string name="order_item_text_t7"> ויקטורי</string>
+    <string name="order_item_text_st7">מנחם בגין 125, רמת גן</string>
+
+    <string name="order_item_text_t8">ויקטורי</string>
+    <string name="order_item_text_st8">מנחם בגין 125, רמת גן</string>
+
+
+
+
+
+
+
+
+
 </resources>
