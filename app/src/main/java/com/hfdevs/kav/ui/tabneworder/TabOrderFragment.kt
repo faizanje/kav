@@ -1,29 +1,32 @@
 package com.hfdevs.kav.ui.tabneworder
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import androidx.viewpager2.widget.ViewPager2
 
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
-import com.hfdevs.kav.databinding.ActivityTabOrderBinding
+import com.hfdevs.kav.databinding.FragmentTabOrderBinding
 import com.hfdevs.kav.ui.tabneworder.ui.main.SectionsPagerAdapter
 
 
-class TabOrderActivity : AppCompatActivity() {
+class TabOrderFragment : Fragment() {
 
-    private lateinit var binding: ActivityTabOrderBinding
+    private lateinit var binding: FragmentTabOrderBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        binding = ActivityTabOrderBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentTabOrderBinding.inflate(layoutInflater)
+        val sectionsPagerAdapter = SectionsPagerAdapter(requireContext(), childFragmentManager)
         val viewPager: ViewPager = binding.viewPager
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = binding.tabs
@@ -49,14 +52,6 @@ class TabOrderActivity : AppCompatActivity() {
             override fun onTabUnselected(tab: TabLayout.Tab) {}
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })
-
-
-
-//        binding.viewPager.registerOnPageChangeCallback(object : OnPageChangeCallback() {
-//            override fun onPageSelected(position: Int) {
-//                tabs.selectTab(tabs.getTabAt(position))
-//            }
-//        })
-
+        return binding.root
     }
 }

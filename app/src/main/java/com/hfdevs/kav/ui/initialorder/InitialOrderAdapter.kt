@@ -47,7 +47,7 @@ class InitialOrderAdapter(var datalist:List<InitialNewOrderItemData>, var model:
         holder.binding.btnAdd.setOnClickListener { view->
             model.increment(position)
             holder.binding.tvCount.setText(model.numbersList[position].toString())
-            view.findNavController().navigate(R.id.action_initialOrderFragment_to_tabOrderActivity)
+            view.findNavController().navigate(R.id.action_initialOrderFragment_to_tabOrderFragment)
         }
         holder.binding.btnMinus.setOnClickListener { view->
             model.decrement(position)

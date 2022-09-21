@@ -42,31 +42,12 @@
         android:label="fragment_initial_order"
         tools:layout="@layout/fragment_initial_order" >
         <action
-            android:id="@+id/action_initialOrderFragment_to_tabNewOrderFragment"
-            app:destination="@id/tabNewOrderFragment" />
-        <action
-            android:id="@+id/action_initialOrderFragment_to_tabOrderActivity"
-            app:destination="@id/tabOrderActivity" />
-        <action
             android:id="@+id/action_initialOrderFragment_to_previousOrderFragment"
             app:destination="@id/previousOrderFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/tabNewOrderFragment"
-        android:name="com.hfdevs.kav.ui.tabneworder.TabNewOrderFragment"
-        android:label="fragment_tab_new_order"
-        tools:layout="@layout/fragment_tab_new_order" >
-
-
         <action
-            android:id="@+id/action_tabNewOrderFragment_to_orderSummaryFragment"
-            app:destination="@id/orderSummaryFragment" />
+            android:id="@+id/action_initialOrderFragment_to_tabOrderFragment"
+            app:destination="@id/tabOrderFragment" />
     </fragment>
-    <activity
-        android:id="@+id/tabOrderActivity"
-        android:name="com.hfdevs.kav.ui.tabneworder.TabOrderActivity"
-        android:label="activity_tab_order"
-        tools:layout="@layout/activity_tab_order" />
     <fragment
         android:id="@+id/previousOrderFragment"
         android:name="com.hfdevs.kav.ui.previousorder.PreviousOrderFragment"
@@ -77,4 +58,13 @@
         android:name="com.hfdevs.kav.ui.ordersummary.OrderSummaryFragment"
         android:label="fragment_order_summary"
         tools:layout="@layout/fragment_order_summary" />
+    <fragment
+        android:id="@+id/tabOrderFragment"
+        android:name="com.hfdevs.kav.ui.tabneworder.TabOrderFragment"
+        android:label="fragment_tab_order"
+        tools:layout="@layout/fragment_tab_order" >
+        <action
+            android:id="@+id/action_tabOrderFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+    </fragment>
 </navigation>

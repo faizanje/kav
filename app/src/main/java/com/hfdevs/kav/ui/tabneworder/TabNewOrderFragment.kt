@@ -16,7 +16,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.hfdevs.kav.R
 
 import com.hfdevs.kav.data.model.TabNewOrderItemData
-
 import com.hfdevs.kav.databinding.FragmentTabNewOrderBinding
 
 
@@ -30,16 +29,18 @@ class TabNewOrderFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentTabNewOrderBinding.inflate(inflater,container,false)
+        binding = FragmentTabNewOrderBinding.inflate(inflater, container, false)
 
 
         init()
         observeData()
         viewModel.fetchData()
-        binding.btnOrder.setOnClickListener{view->
-            Toast.makeText(view.context,"Click",Toast.LENGTH_SHORT).show()
+        binding.btnOrder.setOnClickListener { view ->
+            Toast.makeText(view.context, "Click", Toast.LENGTH_SHORT).show()
 
-         Navigation.findNavController(view).navigate(R.id.action_tabNewOrderFragment_to_orderSummaryFragment)
+//            Navigation.findNavController(requireActivity(),R.id.fragmentContainerView)
+            findNavController()
+                .navigate(R.id.action_tabOrderFragment_to_orderSummaryFragment)
 
 //            findNavController().navigate(R.id.action_tabNewOrderFragment_to_orderSummaryFragment)
 //
@@ -61,7 +62,7 @@ class TabNewOrderFragment : Fragment() {
     private fun init() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
-        adapter = TabOrderAdapter(list,viewModel)
+        adapter = TabOrderAdapter(list, viewModel)
         binding.recyclerView.adapter = adapter
     }
 

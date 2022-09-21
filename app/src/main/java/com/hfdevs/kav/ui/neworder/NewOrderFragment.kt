@@ -15,7 +15,7 @@ class NewOrderFragment : Fragment() {
     private lateinit var binding: FragmentOverviewBinding
     private val viewModel by viewModels<NewOrderViewModel>()
     private lateinit var adapter: NewOrderAdapter
-    val list = mutableListOf<NewOrderItemData>()
+    private val list = mutableListOf<NewOrderItemData>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
