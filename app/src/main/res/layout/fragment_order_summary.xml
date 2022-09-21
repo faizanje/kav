@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".ui.ordersummary.OrderSummaryFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.KAV.AppBarOverlay">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:background="@color/purple_500"
+            android:id="@+id/toolbar"
+
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginVertical="10dp"
+                app:startIconTint="@color/black"
+                android:id="@+id/etSearch"
+                app:expandedHintEnabled="true"
+                app:boxCornerRadiusTopStart="16dp"
+                android:layoutDirection="rtl"
+                app:endIconMode="custom"
+                android:visibility="gone"
+                app:hintTextColor="@color/black"
+                android:hint="חפש מוצר או מק״ט"
+                android:textColorHint="@color/hint_color"
+                app:startIconDrawable="@drawable/back_arrrow"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:suffixText="נקה"
+                app:suffixTextColor="@color/hint_color"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/light_blue"
+                    android:textColor="@color/black"
+
+
+                    android:fontFamily="@font/roboto_regular"
+                    android:textCursorDrawable="@null"
+                    android:layoutDirection="rtl"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:id="@+id/tbLayout"
+                android:gravity="center_vertical"
+                android:backgroundTint="@color/purple_500"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:contentDescription="@string/order_item_text_t1"
+                        android:src="@drawable/back_arrrow"
+
+                        />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/title"
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/btnBack"
+
+                        android:text="סיום הזמנה"
+                        android:textSize="22sp"
+
+                        />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title"
+                        android:layout_toLeftOf="@id/btnBack"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="שופרסל"
+                        style="@style/TextStyle"
+
+                        android:textSize="14sp"
+
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/light_blue_btn"
+                        android:elevation="0dp"
+                        app:icon="@drawable/ic_baseline_add_24"
+                        app:iconTint="@color/black"
+
+                        android:drawableTint="@color/black"
+
+                        android:layoutDirection="rtl"
+                        android:paddingVertical="12dp"
+                        android:text="טעינת הזמנות"
+                        style="@style/TextStyle"
+                        app:cornerRadius="100dp"
+                        app:elevation="0dp"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+
+
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="יום שלישי 25/03/22"
+
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_toLeftOf="@id/btnBack"
+                android:fontFamily="@font/roboto_regular"
+                android:text="תאריך הזמנה"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:src="@drawable/calendar" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="₪2,842.00"
+
+                />
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="לפני מע״מ"
+                android:textSize="14sp"
+                android:textColor="@color/hint_color"
+
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="₪2,842.00"
+
+                />
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="לפני מע״מ"
+
+                android:textSize="14sp"
+                android:textColor="@color/hint_color"
+
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            android:gravity="end"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="₪2,842.00"
+
+                />
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="לפני מע״מ"
+                android:textSize="14sp"
+                android:textColor="@color/hint_color"
+
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

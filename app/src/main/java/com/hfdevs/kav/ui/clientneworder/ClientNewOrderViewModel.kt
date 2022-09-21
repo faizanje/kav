@@ -1,13 +1,14 @@
 package com.hfdevs.kav.ui.clientneworder
 
 import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.hfdevs.kav.R
 import com.hfdevs.kav.data.model.ClientNewOrderItemData
 import com.hfdevs.kav.data.model.NewOrderItemData
 
-class ClientNewOrderViewModel(private val app: Application) : ViewModel() {
+class ClientNewOrderViewModel(private val app: Application) : AndroidViewModel(app) {
     val data = MutableLiveData<List<ClientNewOrderItemData>>()
 
     fun fetchData() {

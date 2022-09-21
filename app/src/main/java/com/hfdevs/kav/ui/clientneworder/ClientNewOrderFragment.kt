@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hfdevs.kav.data.model.ClientNewOrderItemData
 import com.hfdevs.kav.databinding.FragmentClientNewOrderBinding
+
 
 class ClientNewOrderFragment : Fragment() {
 
@@ -24,7 +26,9 @@ class ClientNewOrderFragment : Fragment() {
     ): View? {
 
         binding= FragmentClientNewOrderBinding.inflate(inflater,container,false)
-
+        binding.btnBack.setOnClickListener{view->
+            Navigation.findNavController(view).popBackStack()
+        }
         init()
         observeData()
         viewModel.fetchData()

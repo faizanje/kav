@@ -13,10 +13,68 @@
         <action
             android:id="@+id/action_overviewFragment_to_clientNewOrderFragment"
             app:destination="@id/clientNewOrderFragment" />
+        <action
+            android:id="@+id/action_overviewFragment_to_kavNewOrderFragment"
+            app:destination="@id/kavNewOrderFragment" />
     </fragment>
     <fragment
         android:id="@+id/clientNewOrderFragment"
         android:name="com.hfdevs.kav.ui.clientneworder.ClientNewOrderFragment"
         android:label="fragment_client_new_order"
-        tools:layout="@layout/fragment_client_new_order" />
+        tools:layout="@layout/fragment_client_new_order" >
+        <action
+            android:id="@+id/action_clientNewOrderFragment_to_initialOrderFragment"
+            app:destination="@id/initialOrderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/kavNewOrderFragment"
+        android:name="com.hfdevs.kav.ui.neworder.KavNewOrderFragment"
+        android:label="fragment_kav_new_order"
+        tools:layout="@layout/fragment_kav_new_order" >
+        <action
+            android:id="@+id/action_kavNewOrderFragment_self"
+            app:destination="@id/kavNewOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/initialOrderFragment"
+        android:name="com.hfdevs.kav.ui.initialorder.InitialOrderFragment"
+        android:label="fragment_initial_order"
+        tools:layout="@layout/fragment_initial_order" >
+        <action
+            android:id="@+id/action_initialOrderFragment_to_tabNewOrderFragment"
+            app:destination="@id/tabNewOrderFragment" />
+        <action
+            android:id="@+id/action_initialOrderFragment_to_tabOrderActivity"
+            app:destination="@id/tabOrderActivity" />
+        <action
+            android:id="@+id/action_initialOrderFragment_to_previousOrderFragment"
+            app:destination="@id/previousOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabNewOrderFragment"
+        android:name="com.hfdevs.kav.ui.tabneworder.TabNewOrderFragment"
+        android:label="fragment_tab_new_order"
+        tools:layout="@layout/fragment_tab_new_order" >
+
+
+        <action
+            android:id="@+id/action_tabNewOrderFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/tabOrderActivity"
+        android:name="com.hfdevs.kav.ui.tabneworder.TabOrderActivity"
+        android:label="activity_tab_order"
+        tools:layout="@layout/activity_tab_order" />
+    <fragment
+        android:id="@+id/previousOrderFragment"
+        android:name="com.hfdevs.kav.ui.previousorder.PreviousOrderFragment"
+        android:label="fragment_previous_order"
+        tools:layout="@layout/fragment_previous_order" />
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.hfdevs.kav.ui.ordersummary.OrderSummaryFragment"
+        android:label="fragment_order_summary"
+        tools:layout="@layout/fragment_order_summary" />
 </navigation>

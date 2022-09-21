@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="חודש מאי"
+        android:visibility="gone"
+        style="@style/TextStyle"
+        android:id="@+id/tvHeading"
+
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginTop="12dp"
+    android:gravity="center"
+    android:layout_weight="2"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+
+            android:checked="false"
+
+            app:buttonTint="@color/blue" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDate"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/checkbox"
+
+            android:text="24/03/22"
+
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDate"
+            android:layout_toEndOf="@id/checkbox"
+            android:text="חודש מאי"
+            android:fontFamily="@font/roboto_medium"
+
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="right"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDate"
+            android:layout_toEndOf="@id/checkbox"
+            android:text="בוצע"
+            android:fontFamily="@font/roboto_medium"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDate"
+            android:layout_marginHorizontal="20dp"
+            android:layout_toEndOf="@id/checkbox"
+            android:text="123456789"
+            android:fontFamily="@font/roboto_medium"
+            />
+    </LinearLayout>
+</LinearLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+</LinearLayout>

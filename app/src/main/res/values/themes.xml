@@ -15,4 +15,13 @@
 
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.KAV.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.KAV.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.KAV.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

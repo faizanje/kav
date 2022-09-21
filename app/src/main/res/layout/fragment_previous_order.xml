@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".ui.previousorder.PreviousOrderFragment">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:background="@color/purple_500"
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginVertical="10dp"
+                app:startIconTint="@color/black"
+                android:id="@+id/etSearch"
+                app:expandedHintEnabled="true"
+                app:boxCornerRadiusTopStart="16dp"
+                android:layoutDirection="rtl"
+                app:endIconMode="custom"
+                android:visibility="gone"
+                app:hintTextColor="@color/black"
+                android:hint="חפש מוצר או מק״ט"
+                android:textColorHint="@color/hint_color"
+                app:startIconDrawable="@drawable/back_arrrow"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:suffixText="נקה"
+                app:suffixTextColor="@color/hint_color"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/light_blue"
+                    android:textColor="@color/black"
+
+
+                    android:fontFamily="@font/roboto_regular"
+                    android:textCursorDrawable="@null"
+                    android:layoutDirection="rtl"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/tbLayout"
+                android:gravity="center_vertical"
+                android:backgroundTint="@color/purple_500"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:contentDescription="@string/order_item_text_t1"
+                        android:src="@drawable/back_arrrow"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/btnBack"
+
+                        android:text="טעינת הזמנות קודומות"
+                        android:textSize="22sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title"
+                        android:layout_toLeftOf="@id/btnBack"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="שופרסל"
+
+                        android:textSize="14sp"
+
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="rtl"
+
+        android:id="@+id/mainLayout"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="10dp"
+            android:background="@color/light_blue"
+            android:paddingHorizontal="20dp"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/light_blue"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="48dp"
+                        app:cardCornerRadius="100dp"
+                        app:cardBackgroundColor="@color/light_blue_btn"
+                        android:layout_height="48dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="43"
+
+                            android:gravity="center"
+                            style="@style/TextStyle"
+                            android:layout_gravity="center"
+
+                            />
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="מוצרים"
+                        android:layout_marginHorizontal="10dp"
+
+                        android:gravity="center"
+                        style="@style/TextStyle"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOrder"
+                    android:layout_width="wrap_content"
+
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue"
+                    android:layout_alignParentEnd="true"
+
+
+                    android:elevation="0dp"
+                    android:layoutDirection="rtl"
+                    android:paddingVertical="12dp"
+                    android:text="סיום הזמנה"
+                    app:cornerRadius="100dp"
+                    app:elevation="0dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</RelativeLayout>
