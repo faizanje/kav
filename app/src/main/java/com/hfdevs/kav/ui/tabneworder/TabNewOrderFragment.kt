@@ -36,15 +36,9 @@ class TabNewOrderFragment : Fragment() {
         observeData()
         viewModel.fetchData()
         binding.btnOrder.setOnClickListener { view ->
-            Toast.makeText(view.context, "Click", Toast.LENGTH_SHORT).show()
 
-//            Navigation.findNavController(requireActivity(),R.id.fragmentContainerView)
             findNavController()
                 .navigate(R.id.action_tabOrderFragment_to_orderSummaryFragment)
-
-//            findNavController().navigate(R.id.action_tabNewOrderFragment_to_orderSummaryFragment)
-//
-
 
         }
         return binding.root

@@ -30,9 +30,7 @@ class TabOrderFragment : Fragment() {
         val viewPager: ViewPager = binding.viewPager
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = binding.tabs
-//        tabs.addTab(tabs.newTab().setText("Today"))
-//        tabs.addTab(tabs.newTab().setText("Tomorrow"))
-//        tabs.addTab(tabs.newTab().setText("Jun 23, 2022"))
+
         tabs.setupWithViewPager(viewPager)
         binding.btnSearch.setOnClickListener{view->
             binding.tbLayout.visibility= View.GONE

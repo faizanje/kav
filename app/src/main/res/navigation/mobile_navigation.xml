@@ -57,7 +57,11 @@
         android:id="@+id/orderSummaryFragment"
         android:name="com.hfdevs.kav.ui.ordersummary.OrderSummaryFragment"
         android:label="fragment_order_summary"
-        tools:layout="@layout/fragment_order_summary" />
+        tools:layout="@layout/fragment_order_summary" >
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_summaryDialogFragment"
+            app:destination="@id/summaryDialogFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tabOrderFragment"
         android:name="com.hfdevs.kav.ui.tabneworder.TabOrderFragment"
@@ -67,4 +71,9 @@
             android:id="@+id/action_tabOrderFragment_to_orderSummaryFragment"
             app:destination="@id/orderSummaryFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/summaryDialogFragment"
+        android:name="com.hfdevs.kav.ui.dialogs.SummaryDialogFragment"
+        android:label="fragment_summary_dialog"
+        tools:layout="@layout/fragment_summary_dialog" />
 </navigation>
