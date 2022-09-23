@@ -1,19 +1,22 @@
 package com.hfdevs.kav.ui.fragment.orderview
 
+import android.R.layout
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.hfdevs.kav.R
 import com.hfdevs.kav.data.model.PreviousNewOrderItemData
 import com.hfdevs.kav.databinding.FragmentOrderViewBinding
-import com.hfdevs.kav.databinding.FragmentPreviousOrderBinding
 import com.hfdevs.kav.ui.fragment.previousorder.PreviousOrderAdapter
 import com.hfdevs.kav.ui.fragment.previousorder.PreviousOrderViewModel
+
 
 class OrderViewFragment : Fragment() {
 
@@ -53,5 +56,16 @@ class OrderViewFragment : Fragment() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
         adapter = PreviousOrderAdapter(list,viewModel)
         binding.recyclerView.adapter = adapter
+    }
+
+    fun showCustomSnackBar(){
+        val snackbar: Snackbar = Snackbar.make(binding.root, "הזמנה בוצעה בהצלחה!", Snackbar.LENGTH_LONG)
+        val snackbarLayout = snackbar.view
+        val textView =
+            snackbarLayout.findViewById<View>(com.google.android.material.R.id.snackbar_text) as TextView
+        textView.setCompoundDrawablesWithIntrinsicBounds(com.hfdevs.kav.R.drawable.checked, 0, 0, 0)
+//        textView.compoundDrawablePadding =
+//            resources.getDimensionPixelOffset(com.google.android.material.R.snackbar_icon_padding)
+        snackbar.show()
     }
 }
