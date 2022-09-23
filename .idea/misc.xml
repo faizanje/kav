@@ -4,22 +4,33 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../kav/app/src/main/res/drawable/arrow_right.xml" value="0.1" />
+        <entry key="../kav/app/src/main/res/drawable/count.xml" value="0.1455" />
+        <entry key="../kav/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1315" />
         <entry key="../kav/app/src/main/res/drawable/icon_button_1.xml" value="0.1" />
+        <entry key="../kav/app/src/main/res/drawable/social_dialog_back.xml" value="0.1" />
+        <entry key="../kav/app/src/main/res/drawable/summary_dialog_backg.xml" value="0.12" />
         <entry key="../kav/app/src/main/res/layout/activity_main.xml" value="0.13796296296296295" />
-        <entry key="../kav/app/src/main/res/layout/fragment_client_new_order.xml" value="0.13796296296296295" />
-        <entry key="../kav/app/src/main/res/layout/fragment_overview.xml" value="0.1" />
+        <entry key="../kav/app/src/main/res/layout/activity_tab_order.xml" value="0.24635416666666668" />
+        <entry key="../kav/app/src/main/res/layout/client_neworder_layout.xml" value="0.23072916666666668" />
+        <entry key="../kav/app/src/main/res/layout/fragment_client_new_order.xml" value="0.25" />
+        <entry key="../kav/app/src/main/res/layout/fragment_initial_order.xml" value="0.24635416666666668" />
+        <entry key="../kav/app/src/main/res/layout/fragment_kav_new_order.xml" value="0.24635416666666668" />
+        <entry key="../kav/app/src/main/res/layout/fragment_order_success_dialog.xml" value="0.14166666666666666" />
+        <entry key="../kav/app/src/main/res/layout/fragment_order_summary.xml" value="0.25" />
+        <entry key="../kav/app/src/main/res/layout/fragment_overview.xml" value="0.165" />
+        <entry key="../kav/app/src/main/res/layout/fragment_previous_order.xml" value="0.23229166666666667" />
+        <entry key="../kav/app/src/main/res/layout/fragment_social_dialog.xml" value="0.24635416666666668" />
+        <entry key="../kav/app/src/main/res/layout/fragment_summary_dialog.xml" value="0.24635416666666668" />
+        <entry key="../kav/app/src/main/res/layout/fragment_tab_new_order.xml" value="0.25" />
+        <entry key="../kav/app/src/main/res/layout/fragment_tab_order.xml" value="0.22592592592592592" />
+        <entry key="../kav/app/src/main/res/layout/initial_neworder_layout.xml" value="0.335" />
+        <entry key="../kav/app/src/main/res/layout/kav_neworder_layout.xml" value="0.335" />
         <entry key="../kav/app/src/main/res/layout/neworder_layout_1.xml" value="0.13796296296296295" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.153" />
+        <entry key="../kav/app/src/main/res/layout/previous_order_layout.xml" value="0.335" />
+        <entry key="../kav/app/src/main/res/layout/summary_item_layout.xml" value="0.2453125" />
+        <entry key="../kav/app/src/main/res/layout/tab_neworder_layout.xml" value="0.335" />
         <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/activity_main.xml" value="0.11041666666666666" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/activity_tab_order.xml" value="0.1" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_order_success_dialog.xml" value="0.2" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_order_sucess_dialog.xml" value="0.25364583333333335" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_order_summary.xml" value="0.176" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_order_view.xml" value="0.2" />
         <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_overview.xml" value="0.25052083333333336" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_previous_order.xml" value="0.264" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_tab_new_order.xml" value="0.1125" />
-        <entry key="..\:/AProjects/Android Studio Projects/KAV/app/src/main/res/layout/fragment_tab_order.xml" value="0.1125" />
       </map>
     </option>
   </component>

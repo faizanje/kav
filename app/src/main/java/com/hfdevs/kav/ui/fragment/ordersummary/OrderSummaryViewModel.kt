@@ -7,6 +7,7 @@ import com.hfdevs.kav.data.model.OrderSummaryItemData
 
 class OrderSummaryViewModel (private val app: Application) : AndroidViewModel(app) {
     val data = MutableLiveData<List<OrderSummaryItemData>>()
+    var flag:Boolean = false
     fun fetchData() {
         data.value = listOf(
             OrderSummaryItemData(

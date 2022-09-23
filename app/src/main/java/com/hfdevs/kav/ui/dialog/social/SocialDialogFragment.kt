@@ -1,5 +1,7 @@
 package com.hfdevs.kav.ui.dialog.social
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

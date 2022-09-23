@@ -9,6 +9,8 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hfdevs.kav.data.model.OrderSummaryItemData
 import com.hfdevs.kav.databinding.FragmentOrderSummaryBinding
+import com.hfdevs.kav.ui.dialog.ordersuccess.OrderSuccessDialogFragment
+import com.hfdevs.kav.ui.dialog.social.SocialDialogFragment
 import com.hfdevs.kav.ui.dialog.summary.SummaryDialogFragment
 
 class OrderSummaryFragment : Fragment() {
@@ -20,6 +22,7 @@ class OrderSummaryFragment : Fragment() {
     private lateinit var adapter: OrderSummaryAdapter
     val list = mutableListOf<OrderSummaryItemData>()
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,17 +32,32 @@ class OrderSummaryFragment : Fragment() {
         observeData()
         viewModel.fetchData()
         binding.btnOrder.setOnClickListener { view ->
-//            findNavController().
+            if(viewModel.flag==false){
+                var dialog= SummaryDialogFragment()
 
-            var dialog= SummaryDialogFragment()
-
-            // make dialog itself transparent
+                // make dialog itself transparent
 //            context.applicationContext.g.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 //
 //            // remove background dim
 //            getDialog().getWindow().setDimAmount(0);
 
-             dialog.show(parentFragmentManager,"custom dialog")
+                dialog.show(parentFragmentManager,"custom dialog")
+            }
+           else  {
+                var dialog= OrderSuccessDialogFragment()
+
+                // make dialog itself transparent
+//            context.applicationContext.g.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//
+//            // remove background dim
+//            getDialog().getWindow().setDimAmount(0);
+
+                dialog.show(parentFragmentManager,"custom dialog")
+            }
+            viewModel.flag = true
+//            findNavController().
+
+
 
 
 //            findNavController()

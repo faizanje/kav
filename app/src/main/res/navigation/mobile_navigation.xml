@@ -76,4 +76,18 @@
         android:name="com.hfdevs.kav.ui.dialog.summary.SummaryDialogFragment"
         android:label="fragment_summary_dialog"
         tools:layout="@layout/fragment_summary_dialog" />
+    <dialog
+        android:id="@+id/orderSuccessDialogFragment"
+        android:name="com.hfdevs.kav.ui.dialog.ordersuccess.OrderSuccessDialogFragment"
+        android:label="fragment_order_success_dialog"
+        tools:layout="@layout/fragment_order_success_dialog" >
+        <action
+            android:id="@+id/action_orderSuccessDialogFragment_to_orderViewFragment"
+            app:destination="@id/orderViewFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/orderViewFragment"
+        android:name="com.hfdevs.kav.ui.fragment.orderview.OrderViewFragment"
+        android:label="fragment_order_view"
+        tools:layout="@layout/fragment_order_view" />
 </navigation>
