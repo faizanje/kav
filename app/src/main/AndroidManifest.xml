@@ -14,12 +14,12 @@
         android:theme="@style/Theme.KAV"
         tools:targetApi="31">
         <activity
-            android:name=".ui.tabneworder.TabOrderFragment"
+            android:name="com.hfdevs.kav.ui.fragment.tabneworder.TabOrderFragment"
             android:exported="false"
             android:label="@string/title_activity_tab_order"
             android:theme="@style/Theme.KAV.NoActionBar" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="com.hfdevs.kav.ui.activity.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

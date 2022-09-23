@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layoutDirection="rtl"
     android:layout_height="match_parent"
-    tools:context=".ui.clientneworder.ClientNewOrderFragment">
+    tools:context=".ui.fragment.clientneworder.ClientNewOrderFragment">
 
 
     <com.google.android.material.appbar.MaterialToolbar

@@ -6,7 +6,7 @@
 
     android:layoutDirection="rtl"
     android:layout_height="match_parent"
-    tools:context=".ui.previousorder.PreviousOrderFragment">
+    tools:context=".ui.fragment.previousorder.PreviousOrderFragment">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
@@ -197,15 +197,14 @@
                 </LinearLayout>
 
 
-
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnOrder"
                     android:layout_width="wrap_content"
 
-                    android:layout_marginHorizontal="12dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/blue"
                     android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="12dp"
+                    android:backgroundTint="@color/blue"
 
 
                     android:elevation="0dp"

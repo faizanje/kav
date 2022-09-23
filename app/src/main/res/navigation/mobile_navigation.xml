@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/overviewFragment"
-        android:name="com.hfdevs.kav.ui.neworder.NewOrderFragment"
+        android:name="com.hfdevs.kav.ui.fragment.neworder.NewOrderFragment"
         android:label="fragment_overview"
         tools:layout="@layout/fragment_overview" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/clientNewOrderFragment"
-        android:name="com.hfdevs.kav.ui.clientneworder.ClientNewOrderFragment"
+        android:name="com.hfdevs.kav.ui.fragment.clientneworder.ClientNewOrderFragment"
         android:label="fragment_client_new_order"
         tools:layout="@layout/fragment_client_new_order" >
         <action
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/kavNewOrderFragment"
-        android:name="com.hfdevs.kav.ui.neworder.KavNewOrderFragment"
+        android:name="com.hfdevs.kav.ui.fragment.neworder.KavNewOrderFragment"
         android:label="fragment_kav_new_order"
         tools:layout="@layout/fragment_kav_new_order" >
         <action
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/initialOrderFragment"
-        android:name="com.hfdevs.kav.ui.initialorder.InitialOrderFragment"
+        android:name="com.hfdevs.kav.ui.fragment.initialorder.InitialOrderFragment"
         android:label="fragment_initial_order"
         tools:layout="@layout/fragment_initial_order" >
         <action
@@ -50,12 +50,12 @@
     </fragment>
     <fragment
         android:id="@+id/previousOrderFragment"
-        android:name="com.hfdevs.kav.ui.previousorder.PreviousOrderFragment"
+        android:name="com.hfdevs.kav.ui.fragment.previousorder.PreviousOrderFragment"
         android:label="fragment_previous_order"
         tools:layout="@layout/fragment_previous_order" />
     <fragment
         android:id="@+id/orderSummaryFragment"
-        android:name="com.hfdevs.kav.ui.ordersummary.OrderSummaryFragment"
+        android:name="com.hfdevs.kav.ui.fragment.ordersummary.OrderSummaryFragment"
         android:label="fragment_order_summary"
         tools:layout="@layout/fragment_order_summary" >
         <action
@@ -64,7 +64,7 @@
     </fragment>
     <fragment
         android:id="@+id/tabOrderFragment"
-        android:name="com.hfdevs.kav.ui.tabneworder.TabOrderFragment"
+        android:name="com.hfdevs.kav.ui.fragment.tabneworder.TabOrderFragment"
         android:label="fragment_tab_order"
         tools:layout="@layout/fragment_tab_order" >
         <action
@@ -73,7 +73,7 @@
     </fragment>
     <fragment
         android:id="@+id/summaryDialogFragment"
-        android:name="com.hfdevs.kav.ui.dialogs.SummaryDialogFragment"
+        android:name="com.hfdevs.kav.ui.dialog.summary.SummaryDialogFragment"
         android:label="fragment_summary_dialog"
         tools:layout="@layout/fragment_summary_dialog" />
 </navigation>

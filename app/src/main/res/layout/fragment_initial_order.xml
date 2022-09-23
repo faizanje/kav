@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layoutDirection="rtl"
-    tools:context=".ui.initialorder.InitialOrderFragment">
+    tools:context=".ui.fragment.initialorder.InitialOrderFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"

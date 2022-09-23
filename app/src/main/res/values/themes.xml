@@ -13,6 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <item name="android:windowLightStatusBar">true</item>
 
+        <item name="cornerRadius">100dp</item>
+<!--        <item name="android:layoutDirection">rtl</item>-->
+
         <!-- Customize your theme here. -->
     </style>
 
