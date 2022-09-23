@@ -11,9 +11,17 @@
         android:label="fragment_overview"
         tools:layout="@layout/fragment_overview" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_overviewFragment_to_clientNewOrderFragment"
             app:destination="@id/clientNewOrderFragment" />
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_overviewFragment_to_kavNewOrderFragment"
             app:destination="@id/kavNewOrderFragment" />
     </fragment>
@@ -23,6 +31,10 @@
         android:label="fragment_client_new_order"
         tools:layout="@layout/fragment_client_new_order" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_clientNewOrderFragment_to_initialOrderFragment"
             app:destination="@id/initialOrderFragment" />
     </fragment>
@@ -33,6 +45,10 @@
         android:label="fragment_kav_new_order"
         tools:layout="@layout/fragment_kav_new_order" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_kavNewOrderFragment_self"
             app:destination="@id/kavNewOrderFragment" />
     </fragment>
@@ -42,9 +58,17 @@
         android:label="fragment_initial_order"
         tools:layout="@layout/fragment_initial_order" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_initialOrderFragment_to_previousOrderFragment"
             app:destination="@id/previousOrderFragment" />
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_initialOrderFragment_to_tabOrderFragment"
             app:destination="@id/tabOrderFragment" />
     </fragment>
@@ -59,8 +83,19 @@
         android:label="fragment_order_summary"
         tools:layout="@layout/fragment_order_summary" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_orderSummaryFragment_to_summaryDialogFragment"
             app:destination="@id/summaryDialogFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_orderSummaryFragment_to_orderSuccessDialogFragment"
+            app:destination="@id/orderSuccessDialogFragment" />
     </fragment>
     <fragment
         android:id="@+id/tabOrderFragment"
@@ -68,6 +103,10 @@
         android:label="fragment_tab_order"
         tools:layout="@layout/fragment_tab_order" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_tabOrderFragment_to_orderSummaryFragment"
             app:destination="@id/orderSummaryFragment" />
     </fragment>
@@ -82,6 +121,10 @@
         android:label="fragment_order_success_dialog"
         tools:layout="@layout/fragment_order_success_dialog" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_orderSuccessDialogFragment_to_orderViewFragment"
             app:destination="@id/orderViewFragment" />
     </dialog>
